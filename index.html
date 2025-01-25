@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
     <title>Ana Ruano</title>
 </head>
 
@@ -15,18 +15,30 @@
         <header>
             <nav class="navbar">
                 <div class="brand"></div>
-                <h2>Ana Ruano
-                    <img src="images/logo-removebg-preview.png" alt="logo">
-                </h2>
+                <h2>Ana <span class="surname">Ruano</span></h2>
+                <img class="logo" src="assets/images/logoblanco.png" alt="logo">
+
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
+                    <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">PortFolio</a></li>
                     <li><a href="#">Contacto</a></li>
+                    <li><a class="btn hello" href="#contact"><span class="iconoMano">👋</span>"Saludame!"</a></li>
 
                 </ul>
             </nav>
         </header>
+        <main class="main">
+            <div class="info-content">
+                <h1>Hola, soy <span class="surname">Ana</span></h1>
+                <p>Como estudiante de segundo año del ciclo de Desarrollo de Aplicaciones Web (DAW), me estoy formando en el diseño y desarrollo de aplicaciones web. Participo en proyectos que abarcan desde la creación de prototipos hasta el desarrollo e implementación de funcionalidades, aplicando los conocimientos adquiridos en diseño, programación y tecnologías web. Mi objetivo es seguir aprendiendo y perfeccionando mis habilidades como futura Desarrolladora Front End.</p>
+                <a download href="assets/cv.pdf">
+                    <button class="download-cv">Descargar CV</button></a>
+            </div>
+            <img class="ana" src="assets/images/ana.png" alt="ana">
+        </main>
     </div>
+
+</body>
 
 </html>

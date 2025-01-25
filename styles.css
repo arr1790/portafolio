@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --green: #43F7D4;
+    --dark-blue: #191c32;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,25 +27,41 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: #20243e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 .brand img {
-    width: 50px; /* Cambia el tamaño del logo aquí */
+    width: 40px; /* Cambia el tamaño del logo aquí */
     height: auto; /* Mantiene la proporción del logo */
     display: inline-block;
 }
 
+.logo{
+    width: 60px;
+    color:white; 
 
+}
+
+.logo:hover{
+    transform: scale(1.8);
+
+}
+
+.logo:active{
+    transform: translateY(4px);
+}
 .menu{
     display: flex;
     list-style: none;
+    justify-content: space-around;
 }
 
 .menu li{
     margin: 0 15px;
+    
 }
 
 .menu a{
@@ -49,6 +71,73 @@ body{
     transition: color 0.3s;
 }
 
-.menu a:hover{
+.menu a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+a.active{
     color: #43F7D4; /* Color al pasar el cursor */
+}
+
+a.btn.hello {
+    padding: 8px 15px;
+    background-color: var(--green);
+    color: var(--dark-blue);
+    font-weight: 600;
+    border-radius: 30px;
+
+}
+
+.surname{
+    color: var(--green);
+}
+
+.main {
+    margin:0 auto;
+    width: 80vw;
+    height: 80vh;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr); 
+    align-items: center;
+
+
+}
+
+h1{
+    font-size:3em;
+   
+}
+ 
+
+.download-cv{
+    padding:10px 20px;
+    background-color: var(--green);
+    color: var(--dark-blue);
+    border:none;
+    border-radius: 20px;
+    margin-top:10px;
+    cursor:pointer;
+    box-shadow:1px 3px 11px -5px rgba(102,231,200.69);
+
+}
+
+.download-cv:hover{
+    background-color: var(--white);
+    box-shadow: none;
+}
+
+
+.main img{
+    width: 350px;
+    border:7px solid var(--green);
+    height:520px ;
+
 }
