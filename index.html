@@ -18,17 +18,44 @@
                 <div class="brand"></div>
                 <h2>Ana <span class="surname">Ruano</span></h2>
                 <img class="logo" src="assets/images/logoblanco.png" alt="logo">
+                <div class="header__menu">
+                    <input type="checkbox" id="burger-activador" class="burger-checkbox">
 
+                    <!-- Label que controla el menú -->
+                    <label for="burger-activador" class="burger-label">
+                        <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-align-justify">
+                            <path d="M3 12h18" />
+                            <path d="M3 18h18" />
+                            <path d="M3 6h18" />
+                        </svg>
+                        <svg id="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-x">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </label>
+                </div>
+
+
+                <!-- menu -->
                 <ul class="menu">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#about">Tecnologias</a></li>
                     <li><a href="#portfolio">PortFolio</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a class="btn hello" href="#contact"><span class="iconoMano">👋</span>"Saludame!"</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a class="btn hello" href="#contact__icons"><span class="iconoMano">👋</span>"Saludame!"</a>
+                    </li>
 
                 </ul>
+
             </nav>
+
         </header>
+
+        <!-- sobre mi -->
         <main class="main">
             <div class="info-content">
                 <h1>Hola, soy <span class="surname">Ana</span></h1>
@@ -55,6 +82,8 @@
         </main>
     </div>
 
+
+    <!-- tecnologias con los iconos -->
     <div id="about" class="about">
 
         <img class="about-img" src="assets/images/developer.svg" alt="about">
@@ -95,6 +124,8 @@
 
 
             </div>
+
+            <!-- Herramientos que he aprendido -->
             <div class="divider">
                 <h2>HERRAMIENTAS DE DISEÑO</h2>
                 <p class="about-text">Además,tengo conocimiento y experiencia de uso de herramientas de edición.</p>
@@ -110,80 +141,127 @@
         </div>
     </div>
 
+    <!-- proyectos -->
     <div id="portfolio" class="portfolio">
         <div class="portfolio-heading">
-          <h2>PortFolio</h2>
-          <div class="divider"></div>
+            <h2>PortFolio</h2>
+            <div class="divider"></div>
         </div>
+
+        <!-- proyecto1 -->
         <div class="container">
-          <div class="card">
-            <div class="card__img">
+            <div class="card">
+                <div class="card__img">
+                </div>
+                <div class="card__title">
+                    <h2>Descripción proyecto</h2>
+                    <p>Paises del Mundo que incluye información</p>
+                </div>
+                <div class="card__proyect-links">
+                    <a href="https://github.com/arr1790/Paises-del-Mundo/tree/main">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://paises-del-mundoana.vercel.app/">
+                        <i class="fas fa-globe-asia"></i>
+                    </a>
+
+                </div>
+                <div class="button-content">
+                    <button class="project-details-button download-cv">
+                        <a href="#">Detalles proyecto</a>
+                    </button>
+                </div>
             </div>
-            <div class="card__title">
-              <h2>Descripción proyecto</h2>
-              <p>Paises del Mundo que incluye información</p>
+
+            <!-- proyecto2 -->
+            <div class="card">
+                <div class="card__img">
+                </div>
+                <div class="card__title">
+                    <h2>Descripción proyecto</h2>
+                    <p>Un proyecto de la pagina de Junta de Andalucia</p>
+                </div>
+                <div class="card__proyect-links">
+                    <a href="https://github.com/arr1790/proyectoJuntadeAndalucia_AnaRuano">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                        href="https://proyectojuntadeandaluciaanaruano.vercel.app/informacion_general_convalidaciones_exenciones_y_titulos">
+                        <i class="fas fa-globe-asia"></i>
+                    </a>
+
+                </div>
+
+                <!-- proyecto3 -->
+                <div class="button-content">
+                    <button class="project-details-button download-cv">
+                        <a href="#">Detalles proyecto</a>
+                    </button>
+                </div>
             </div>
-            <div class="card__proyect-links">
-              <a href="https://github.com/arr1790/Paises-del-Mundo/tree/main">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://paises-del-mundoana.vercel.app/">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-             
+            <div class="card">
+                <div class="card__img">
+                </div>
+                <div class="card__title">
+                    <h2>Descripción proyecto</h2>
+                    <p>Un juego de Memoria de personajes de Mario bross</p>
+                </div>
+                <div class="card__proyect-links">
+                    <a href="https://github.com/arr1790/Juego-de-Cartas">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://juego-de-cartas-chi.vercel.app/">
+                        <i class="fas fa-globe-asia"></i>
+                    </a>
+
+                </div>
+                <div class="button-content">
+                    <button class="project-details-button download-cv">
+                        <a href="#">Detalles proyecto</a>
+                    </button>
+                </div>
             </div>
-            <div class="button-content">
-              <button class="project-details-button download-cv">
-                <a href="#">Detalles proyecto</a>
-              </button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-            </div>
-            <div class="card__title">
-              <h2>Descripción proyecto</h2>
-              <p>Un proyecto de la pagina de Junta de Andalucia</p>
-            </div>
-            <div class="card__proyect-links">
-              <a href="https://github.com/arr1790/proyectoJuntadeAndalucia_AnaRuano">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://proyectojuntadeandaluciaanaruano.vercel.app/informacion_general_convalidaciones_exenciones_y_titulos">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-              
-            </div>
-            <div class="button-content">
-              <button class="project-details-button download-cv">
-                <a href="#">Detalles proyecto</a>
-              </button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-            </div>
-            <div class="card__title">
-              <h2>Descripción proyecto</h2>
-              <p>Un juego de Memoria de personajes de Mario bross</p>
-            </div>
-            <div class="card__proyect-links">
-              <a href="https://github.com/arr1790/Juego-de-Cartas">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://juego-de-cartas-chi.vercel.app/">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-             
-            </div>
-            <div class="button-content">
-              <button class="project-details-button download-cv">
-                <a href="#">Detalles proyecto</a>
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <!-- formulario -->
+    <div class="contact-section">
+        <div class="contact-heading">
+            <h2>Contacto</h2>
+            <div class="divider"></div>
+        </div>
+        <div id="contact" class="container-contact">
+            <img src="assets/images/SLA-de-contacto.png" alt="">
+            <div class="contact-form">
+                <h4>Formulario...</h4>
+                <form class="form-group">
+                    <input type="text" placeholder="Nombre" class="input">
+                    <input type="email" placeholder="Email" class="input">
+                    <textarea name="message" placeholder="Comentario..."></textarea>
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- contacto -->
+
+    <section id="contact__icons" class="contact__icons">
+        <div class="contact__icons-email">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:anaruano1790@gmail.com"> anaruano1790@gmail.com</a>
+        </div>
+        <div class="contact__icons-location">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Montilla</p>
+        </div>
+    </section>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <p>Portfolio realizado por <span style="font-size: 20px; color:blue;">&#10084;</span> Ana Ruano</p>
+    </footer>
+
 </body>
 
 </html>
